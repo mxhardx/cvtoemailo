@@ -1,31 +1,22 @@
-import { redirect } from 'next/navigation'
-import { createClient } from '@/lib/supabase/server'
+'use client'
+
 import CVUpload from '@/components/CVUpload'
 import { FileText, Clock, CheckCircle, XCircle } from 'lucide-react'
 import { formatDistanceToNow } from 'date-fns'
 import { fr } from 'date-fns/locale'
+import { useEffect, useState } from 'react'
 
-export default async function DashboardPage() {
-  const supabase = await createClient()
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
+export default function DashboardPage() {
+  const [user, setUser] = useState<any>(null)
+  const [profile, setProfile] = useState<any>(null)
+  const [cvs, setCvs] = useState<any[]>([])
 
-  if (!user) {
-    redirect('/login')
-  }
-
-  const { data: profile } = await supabase
-    .from('profiles')
-    .select('*')
-    .eq('id', user.id)
-    .single()
-
-  const { data: cvs } = await supabase
-    .from('cvs')
-    .select('*')
-    .eq('user_id', user.id)
-    .order('created_at', { ascending: false })
+  useEffect(() => {
+    // Mock data for demo
+    setUser({ id: '1', email: 'demo@example.com' })
+    setProfile({ full_name: 'Demo User' })
+    setCvs([])
+  }, [])
 
   const getStatusIcon = (status: string) => {
     switch (status) {
@@ -54,6 +45,17 @@ export default async function DashboardPage() {
       default:
         return status
     }
+  }
+
+  if (!user) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold text-gray-900 mb-4">Connexion requise</h1>
+          <p className="text-gray-600">Veuillez vous connecter pour accéder à votre dashboard</p>
+        </div>
+      </div>
+    )
   }
 
   return (
