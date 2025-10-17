@@ -1,0 +1,19 @@
+INSTRUCTIONS: Créez un fichier nommé .env.local à la racine du projet
+avec le contenu suivant (copier-coller):
+
+========== DÉBUT DU CONTENU ==========
+
+NEXT_PUBLIC_SUPABASE_URL=https://demo.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=demo_key_for_investor_presentation
+SUPABASE_SERVICE_ROLE_KEY=demo_service_key
+OPENAI_API_KEY=sk-demo
+RESEND_API_KEY=re_demo
+RESEND_FROM_EMAIL=demo@resend.dev
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+CRON_SECRET=demo_secret_123
+
+========== FIN DU CONTENU ==========
+
+Note: Ces valeurs sont pour la DÉMO uniquement.
+Elles permettent de lancer l'app sans configurer les vraies APIs.
+

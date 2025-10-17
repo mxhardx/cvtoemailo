@@ -1,0 +1,44 @@
+AHMED BENNANI
+Email: ahmed.bennani@email.com
+Téléphone: +212 6 12 34 56 78
+Localisation: Casablanca, Maroc
+
+EXPÉRIENCE PROFESSIONNELLE
+
+Développeur Web - TechCorp Maroc
+Janvier 2021 - Présent
+- Développement d'applications web
+- Travail en équipe
+- Utilisation de JavaScript et PHP
+
+Stagiaire - StartupXYZ
+Juin 2020 - Décembre 2020
+- Assistance au développement
+- Tests de logiciels
+
+FORMATION
+
+Licence en Informatique
+Université Hassan II, Casablanca
+2017 - 2020
+
+COMPÉTENCES
+
+- JavaScript
+- HTML/CSS
+- PHP
+- MySQL
+- Git
+
+LANGUES
+
+- Arabe: Langue maternelle
+- Français: Courant
+- Anglais: Intermédiaire
+
+CENTRES D'INTÉRÊT
+
+- Technologie
+- Lecture
+- Sport
+

@@ -1,0 +1,57 @@
+═══════════════════════════════════════════════════════════
+  🚀 DÉMARRAGE RAPIDE - DÉMO INVESTISSEUR (3 MINUTES)
+═══════════════════════════════════════════════════════════
+
+ÉTAPE 1: Installer les dépendances
+───────────────────────────────────
+npm install
+
+
+ÉTAPE 2: Créer le fichier .env.local
+───────────────────────────────────
+Créez un fichier nommé ".env.local" avec ce contenu:
+
+NEXT_PUBLIC_SUPABASE_URL=https://demo.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=demo_key_for_investor_presentation
+SUPABASE_SERVICE_ROLE_KEY=demo_service_key
+OPENAI_API_KEY=sk-demo
+RESEND_API_KEY=re_demo
+RESEND_FROM_EMAIL=demo@resend.dev
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+CRON_SECRET=demo_secret_123
+
+
+ÉTAPE 3: Lancer l'application
+───────────────────────────────────
+npm run dev
+
+Attendez que "Ready" apparaisse.
+
+
+ÉTAPE 4: Prendre les 3 SCREENSHOTS
+───────────────────────────────────
+Ouvrez ces URLs dans votre navigateur:
+
+📊 SCREENSHOT 1 - Dashboard Admin:
+   http://localhost:3000/admin
+
+📧 SCREENSHOT 2 - Gestion des Emails:
+   http://localhost:3000/admin/emails
+
+👥 SCREENSHOT 3 - Liste des Abonnés:
+   http://localhost:3000/admin/subscribers
+
+
+═══════════════════════════════════════════════════════════
+  ✅ C'EST TOUT ! Les pages utilisent des données mockées.
+  ✅ Aucune API réelle n'est appelée.
+  ✅ Parfait pour montrer à votre investisseur.
+═══════════════════════════════════════════════════════════
+
+💡 ASTUCE: Si vous voyez un warning "validation failed", 
+   c'est normal en mode démo. Ignorez-le.
+
+📖 Pour plus de détails, consultez:
+   - DEMO_INVESTOR.md (guide complet)
+   - START_DEMO.md (instructions détaillées)
+
