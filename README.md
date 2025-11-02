@@ -282,3 +282,5 @@ Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou un
 
 **Note** : Cette application utilise des services tiers (OpenAI, Resend, Supabase). Assurez-vous de respecter leurs conditions d'utilisation et de gérer vos coûts.
 
+
+# cvtoemailo
